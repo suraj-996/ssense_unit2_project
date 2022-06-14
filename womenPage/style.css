@@ -1,3 +1,9 @@
+#men{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    /* margin: auto; */
+}
 #category{
     font-size: 12px;
     font-style: normal;
@@ -8,11 +14,25 @@
 #category>ul>li>h2{
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Favorit SSENSE Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: .09px;
+     */
+    color: #000;
     
 }
 #category>ul>li{
     margin-bottom: 2px;
     list-style-type: none;
+    font-family: "Favorit SSENSE Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: .09px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000;
     
 }
 #category>ul>li>h2>a{
@@ -23,44 +43,94 @@
     text-decoration: none;
     color: #000;
 }
-#men{
+/* #men{
     display: flex;
     width: 95%;
     justify-content: space-around;
     margin: auto;
-}
+} */
 #category{
-    width: 25%;
+    width: 10%;
 }
 #product{
-    width: 80%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,auto);
     gap: 12px;
-    margin-left: 120px;
+    /* margin-left: 100px; */
 }
 #product>div{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 10px;
+    height: fit-content;
+}
+#product>div>img{
+    height: fit-content;
 }
 #sorting{
-    width: 15%;
+    /* width: fit-content;
+     */
+     width: 0%;
 }
-#product>div>span{
-    display: block;
-}
+ #product>div>span{
+     display: block;
+} 
 #sorting>span{
     display: block;
     font-weight: bold;
+    /* margin-left: 30px; */
 }
-#sorting{
-   margin-left: 180px;
 
-}
+/* #sorting>span{
+   margin-left: 250px;
+
+} */
+/* #soting {
+    margin-left: 250px;
+} */
 #addtobag{
     background-color: #000;
     color: white;
     text-transform: uppercase;
     width: 100%;
+    height: 40px;
+}
+#sorting>ul>li{
+    list-style-type: none;
+    font-family: "Favorit SSENSE Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    letter-spacing: .2px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000;
+}
+
+@media all and (min-width:575px) and (max-width:990px){
+    #category{
+        display: none;
+    }
+    #product{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-rows: repeat(3,auto); */
+    }
+    #sorting{
+        display: none;
+    }
+}
+@media all and (min-width:200px) and (max-width:574px){
+    #category{
+        display: none;
+    }
+    #product{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(3,auto); */
+    }
+    #sorting{
+        display: none;
+    }
 }
