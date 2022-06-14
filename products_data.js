@@ -142,3 +142,7 @@ let womenProduct=[
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221249F063018_1/jil-sander-green-cotton-blazer.jpg",brand:"GIVENCHY",name:"SSENSE Exclusive",price:"$770"},
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221168F054007_1/maison-margiela-blue-cotton-shirt.jpg",brand:"GIVENCHY",name:"SSENSE Exclusive",price:"$770"},
 ]
+
+let everything_else=[
+    
+]
