@@ -1,3 +1,5 @@
+// This is array of object for image, brand , name, price
+
 let menProduct=[
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.1/222439M145001_1/numbering-silver-8551-necklace.jpg",brand:"NUMBERING",name:"Silver #8551 Necklace",price:"120"},
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.1/222439M145005_1/numbering-ssense-exclusive-silver-5702-necklace.jpg",brand:"NUMBERING",name:"SSENSE Exclusive Silver #5702 Necklace",price:"225"},
@@ -102,6 +104,7 @@ let menProduct=[
    
 ]
 
+// Sorting price
 let arr1=[...menProduct]
 function sortPrice(){
     let selected = document.querySelector("#price").value;
@@ -121,6 +124,7 @@ function sortPrice(){
     
 }
 
+// display all product
 displayProduct(menProduct);
 
 function displayProduct(data){
@@ -147,6 +151,9 @@ function displayProduct(data){
     })
 }
 
+
+// sending data to localStorage
+// key name addToBag
 let productArr=JSON.parse(localStorage.getItem("addToBag")) || []
 function addToBag(e){
     let obj={

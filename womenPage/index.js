@@ -1,3 +1,5 @@
+// This is array of object for image, brand , name, price
+
 let womenProduct=[
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221432F111000_1/1xblue-ssense-exclusive-pink-anime-camisole.jpg",brand:"1XBLUE",name:"SSENSE Exclusive",price:"113"},
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221188F049063_1/mm6-maison-margiela-ssense-exclusive-black-nano-faux-leather-triangle-tote.jpg",brand:"MM6 MAISON MARGIELA",name:"SSENSE Exclusive",price:"185"},
@@ -36,7 +38,7 @@ let womenProduct=[
     {img:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221168F054007_1/maison-margiela-blue-cotton-shirt.jpg",brand:"GIVENCHY",name:"SSENSE Exclusive",price:"770"},
 ]
 
-
+// sorting price
 let arr1=[...womenProduct]
 function sortPrice(){
     let selected = document.querySelector("#price").value;
@@ -58,6 +60,7 @@ function sortPrice(){
 
 displayProduct(womenProduct);
 
+// display all products
 function displayProduct(data){
     document.querySelector("#product").innerHTML=""
     data.forEach(function(e,i){
@@ -82,6 +85,8 @@ function displayProduct(data){
     })
 }
 
+// sending data to Local Storage 
+// key name - addToBag
 let productArr=JSON.parse(localStorage.getItem("addToBag")) || []
 function addToBag(e){
     let obj={
