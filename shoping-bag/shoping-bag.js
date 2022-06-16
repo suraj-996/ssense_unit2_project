@@ -87,7 +87,7 @@ else {
   DivCart.setAttribute("id", "Divcart");
   ////////Total Price
   let Totalprice = 0;
-  ////////////// Loop
+  ////////////// Loop/////////////////////////////////////////////////////////////
   for (let i = 0; i < Arr.length; i++) {
     /////////////
     let Pri = +Arr[i].price;
@@ -115,7 +115,7 @@ else {
     DIV2.setAttribute("id", "itemdiv_2");
     //// Price add
     let price = document.createElement("p");
-    price.innerText = `$${Totalprice}.00 USD`;
+    price.innerText = `$${Arr[i].price}.00 USD`;
 
     ////////////////////////////////////////////////////////////////////////////////////////
     //////////////Add Event Lisner
@@ -243,7 +243,7 @@ else {
       Totalprice = Totalprice - ct;
       ordertotal = Totalprice + Shipingast;
       // alert(Totalprice);
-      document.querySelector("#Totalprice").innerText = `$${Totalprice}.00 USD`;
+      document.querySelector("#Totalprice").innerText = `$${ordertotal}.00 USD`;
       document.querySelector(
         "#Total"
       ).innerHTML = `<span> $${oldtotal}.00 USD</span> $${Totalprice}.00 USD`;
@@ -251,7 +251,7 @@ else {
         cart: Arr,
         Withoutcoupan: oldtotal,
         Withcoupan: Totalprice,
-        Shipincharge: ct,
+        Shipincharge: Shipingast,
         NewTotal: ordertotal,
       };
       Oredr.push(obb1);
