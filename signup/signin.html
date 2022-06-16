@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGNIN</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            background-color: white;
+            width: 30%;
+            margin: auto;
+            margin-top: 60px;
+        }
+        input,button{
+            width: 100%;
+            font-size: 10px;
+            display: block;
+            padding: 5px 0px 5px 0px;
+            margin-top: 5px
+        }
+        #button{
+            background-color: black;
+            color: white;
+            padding: 5px 0px 5px 0px;
+            font-size: 10px;
+            margin: 20px 0px 20px 0px;
+        }
+       
+           form{
+            margin-top: 10px;
+           }
+           span{
+            font-size: 12px;
+            display: block;
+            margin-bottom: 20px;
+           }
+         #email{
+            margin-bottom: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div>
+       
+        <form>
+            <span>LOGIN</span>
+            <label>Email address</label>
+            <input type="email" id="email" placeholder="Enter Your Email Here">
+            <label >Password</label>
+            <input type="password" id="password" placeholder="SHOW">
+           
+            <button id="button">CONTINUE</button>
+            <a href="">Forgot your password?</a>
+            <a href="">Not your email?</a>
+        </form>
+    </div>  
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form");
+
+    let user_data_arr=JSON.parse(localStorage.getItem("userdata"))||[];
+    form.addEventListener("submit",function()
+    {
+
+        let obj_data={
+            email:form.email.value,
+            password:form.password.value,
+
+        }
+
+    if(checksignin(obj_data.email,obj_data.password)===true)
+    {
+        localStorage.setItem("signin",JSON.stringify(obj_data));
+        alert("Sign in Succesful");
+         window.location.href="https://www.ssense.com/en-in/men/sale";
+    }
+    else if(checksignin(obj_data.email,obj_data.password)===false)
+    {
+        alert("Please Enter correct email or password");
+    }
+    else{
+        alert("please Enter your email and password");
+    }
+    
+
+    });
+
+    function checksignin(email,password)
+    {
+       let filter=user_data_arr.filter(function(element){
+        return element.email===email && element.password === password;
+       })
+       if(filter.length>0)
+       {
+        return true;
+       }
+       else
+       {
+        return false;
+       }
+    }
+</script>
