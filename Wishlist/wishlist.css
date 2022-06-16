@@ -80,7 +80,7 @@ button{
         
     }
     button{
-        background-color: black;
+        background-image: linear-gradient(to right, #434344, #040109);
         color: white;
         padding: 7px ;
         align-items: center;
@@ -143,7 +143,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
 }
 #Totaldiv{
     width: 100%;
@@ -156,10 +155,7 @@ img{
     /* display: flex;
     flex-direction: column; */
 }
-#Totaldiv2{
-    text-align: right;
-}
-/* #Totaldiv2>p::before{
+#Totaldiv2>p::before{
     content: "$";
 }
 #Totaldiv2>p::after{
@@ -170,19 +166,5 @@ img{
 }
 #itemdiv_2>p:first-child::after{
     content: ".00 USD";
-} */
+}
 
-span{
-    text-decoration: line-through;
-}
-#coupan ~button{
-    margin: 20px;
-    background-image: linear-gradient(to right, #434344, #040109);
-    border: 1px solid transparent;
-    padding: auto;
-}
-#coupan {
-    border: none;
-    border-bottom: 1px solid #4a00e0;
-    outline: none;
-}

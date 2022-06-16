@@ -1,6 +1,5 @@
-let Arr = JSON.parse(localStorage.getItem("addToBag")) || [];
-let Wishbag = JSON.parse(localStorage.getItem("Wishlist")) || [];
-let Oredr = JSON.parse(localStorage.getItem("Order")) || [];
+let Arr = JSON.parse(localStorage.getItem("Wishlist")) || [];
+let Addtobag = JSON.parse(localStorage.getItem("addToBag")) || [];
 
 // When Cart Was Empaty Than Exacude this part////////////
 //
@@ -16,9 +15,9 @@ if (Arr.length == 0) {
   div1.setAttribute("id", "ifdiv");
 
   let p1 = document.createElement("p");
-  p1.innerText = "SHOPING BAG";
+  p1.innerText = "Wishlist";
   let p2 = document.createElement("p");
-  p2.innerText = "Your shopping bag is empty.";
+  p2.innerText = "Your Wishlist is empty.";
 
   let div2 = document.createElement("div");
 
@@ -52,7 +51,7 @@ else {
   div2.setAttribute("id", "bag");
 
   let p11 = document.createElement("p");
-  p11.innerText = "SHOPPING BAG";
+  p11.innerText = "Wishlist";
 
   let HR = document.createElement("hr");
 
@@ -80,11 +79,12 @@ else {
   let p23 = document.createElement("button");
   p23.innerText = "PROCEED TO CHECKOUT";
   p23.setAttribute("id", "checkoutbtn");
-  p23.addEventListener("click", checkout);
 
   //For Each Item Creat Div
   let DivCart = document.createElement("div");
   DivCart.setAttribute("id", "Divcart");
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
   ////////Total Price
   let Totalprice = 0;
   ////////////// Loop
@@ -115,7 +115,7 @@ else {
     DIV2.setAttribute("id", "itemdiv_2");
     //// Price add
     let price = document.createElement("p");
-    price.innerText = `$${Totalprice}.00 USD`;
+    price.innerText = Arr[i].price;
 
     ////////////////////////////////////////////////////////////////////////////////////////
     //////////////Add Event Lisner
@@ -123,7 +123,7 @@ else {
     Remove.innerText = "Remove";
     Remove.addEventListener("click", function () {
       Arr.splice(i, 1);
-      localStorage.setItem("addToBag", JSON.stringify(Arr));
+      localStorage.setItem("Wishlist", JSON.stringify(Arr));
       window.location.reload();
     });
     Remove.setAttribute("id", "remove");
@@ -148,13 +148,13 @@ else {
 
     let Move = document.createElement("p");
     Move.setAttribute("id", "Movep");
-    Move.innerText = "Move to Wishlist";
+    Move.innerText = "Move to Cart";
     //Add event Lisner/////////////////////////////////////////////////////////////////////////////////////////////
     Move.addEventListener("click", function () {
-      Wishbag.push(Arr[i]);
+      Addtobag.push(Arr[i]);
       Arr.splice(i, 1);
-      localStorage.setItem("Wishlist", JSON.stringify(Wishbag));
-      localStorage.setItem("addToBag", JSON.stringify(Arr));
+      localStorage.setItem("addToBag", JSON.stringify(Addtobag));
+      localStorage.setItem("Wishlist", JSON.stringify(Arr));
       window.location.reload();
     });
 
@@ -189,81 +189,34 @@ else {
   let TotalOrder = document.createElement("p");
   TotalOrder.innerText = "Oeder Total";
   //
-  Totaldiv1.append(TotalName, TotalShiping, TotalOrder);
+  Totaldiv1.append(TotalName);
   ///////////////////////
 
   //
   let Shipingast = Totalprice / 10;
-  let oldtotal = Totalprice;
-
   let ordertotal = Totalprice + Shipingast;
   //
   let Totaldiv2 = document.createElement("div");
   Totaldiv2.setAttribute("id", "Totaldiv2");
   ///
   let Total = document.createElement("p");
-  Total.setAttribute("id", "Total");
-  Total.innerText = `$${Totalprice}.00 USD`;
+  Total.innerText = Totalprice;
   let Shiping = document.createElement("p");
-  Shiping.innerText = `$${Shipingast}.00 USD`;
+  Shiping.innerText = Shipingast;
   let Order = document.createElement("p");
-  Order.setAttribute("id", "Totalprice");
-  Order.innerText = `$${ordertotal}.00 USD`;
+  Order.innerText = ordertotal;
 
   //\
-  Totaldiv2.append(Total, Shiping, Order);
+  Totaldiv2.append(Total);
   ////////////
   Totaldiv.append(Totaldiv1, Totaldiv2);
 
   //Here Append All Items
   div2.append(p11, divitem, HR, DivCart, Totaldiv);
 
-  //////////////
-  //coupan/////////////////////////////////////////////////////////////////////////////////////
-  let coupanp = document.createElement("p");
-  coupanp.innerText = "Apply Coupon";
+  div1.append(p21, p22, p23);
 
-  let Coupan = document.createElement("input");
-  Coupan.setAttribute("id", "coupan");
-
-  let cbotton = document.createElement("button");
-  cbotton.innerText = "Apply";
-  cbotton.addEventListener("click", function () {
-    let vlcoupan = document.querySelector("#coupan").value;
-    // alert(vlcoupan);
-    if (
-      vlcoupan == "masai30" ||
-      vlcoupan == "Masai30" ||
-      vlcoupan == "MASAI30" ||
-      vlcoupan == "masai 30" ||
-      vlcoupan == "Masai 30" ||
-      vlcoupan == "MASAI 30"
-    ) {
-      let ct = (30 * Totalprice) / 100;
-      Totalprice = Totalprice - ct;
-      ordertotal = Totalprice + Shipingast;
-      // alert(Totalprice);
-      document.querySelector("#Totalprice").innerText = `$${Totalprice}.00 USD`;
-      document.querySelector(
-        "#Total"
-      ).innerHTML = `<span> $${oldtotal}.00 USD</span> $${Totalprice}.00 USD`;
-      let obb1 = {
-        cart: Arr,
-        Withoutcoupan: oldtotal,
-        Withcoupan: Totalprice,
-        Shipincharge: ct,
-        NewTotal: ordertotal,
-      };
-      Oredr.push(obb1);
-      console.log(obb1);
-    } else {
-      alert("Entre Valid Coupan");
-    }
-  });
-
-  div1.append(p21, p22, p23, coupanp, Coupan, cbotton);
-
-  maindiv.append(div2, div1);
+  maindiv.append(div2);
 }
 
 // All Function/////////////////////////////////////////
@@ -285,10 +238,4 @@ function b2click() {
 function b3click() {
   // Please add refer link Shop Everywere
   window.location.href = "https://www.ssense.com/en-in/everything-else";
-}
-
-function checkout() {
-  // alert("done");
-  localStorage.setItem("Order", JSON.stringify(Oredr));
-  window.location.href = "https://www.masaischool.com/";
 }
