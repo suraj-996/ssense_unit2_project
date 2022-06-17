@@ -67,12 +67,13 @@ body a{
 #box{
     display: flex;
     position: sticky;
-    right: 60%;
-    top: 2%;
+  
+    top: 1%;
+    left: 20%;
     background-color:#333333;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+   
     border-radius: 5px;
     padding: 2%;
 }
@@ -292,7 +293,7 @@ border-radius: 10px;
     margin-bottom: 90px;
  }
  #foot>div:first-child{display: flex;
-    width: 80%;
+    width: 90%;
     height: 50px;
     
     margin: auto;
@@ -302,10 +303,10 @@ border-radius: 10px;
     
     display: grid;
     grid-template-columns: repeat(8,1fr);
-   gap: 2%;
+    gap:2%;
     font-size: 11px;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     }
     #foot>div:first-child>div+div{
         width:12%;
@@ -319,11 +320,12 @@ border-radius: 10px;
     width: 55%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin: auto;
+    gap:2%;
     font-size: 12px;
     justify-content: center;
     color: rgb(124, 124, 248);
     list-style: none;
+    margin: auto;
 }
 #foot>div:first-child>div>img{
     width: 20px;
@@ -344,7 +346,8 @@ border-radius: 10px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,auto);
     gap: 12px;
-     margin-left: 100px; 
+     /* margin-left: 100px;  */
+     margin:auto;
 }
 #mohit>div{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -354,28 +357,38 @@ border-radius: 10px;
 #mohit>div>img{
     height: fit-content;
 }
+#mohit>div>span{
+    display: block;
+} 
+
 
 @media all and (min-width:320px) and (max-width:800px) {
     #navbar>div:nth-child(1){
       
-        width:45%;
+        width:40%;
         display: grid;
        
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(1,auto );
         justify-content: space-between;
         font-size: 11px;
+        gap:2%;
         
     }
     #navbar>div:nth-child(3){
         width:40%;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(1,auto );
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 11px;
+        gap:2%;
         
     }
+    .htao{
+        display: none;
+    }
+
     /* ------------------------------------ */
    
     .sale>div:nth-child(1){

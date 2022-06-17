@@ -3,12 +3,12 @@ function check(event){
     event.preventDefault();
     let box=document.createElement('div')
     box.setAttribute("id",'box')
-    box.style.height="60px";
-    box.style.width="300px";
+    box.style.height="80px";
+    box.style.width="350px";
     box.style.top="600px";
     let aam=document.createElement("input")
     aam.setAttribute("id","searchbox")
-    aam.setAttribute("placeholder","search for anything")
+    aam.setAttribute("placeholder","search here!")
      let btn=document.createElement("button")
      btn.setAttribute("id","btn")
      btn.innerText="search"
@@ -17,7 +17,7 @@ function check(event){
         craate(a)
      })
     box.append(aam,btn)
-    document.getElementById("navbar").append(box)
+    document.getElementById("jadu").append(box)
 }
 let res=[]
 function craate(a){
