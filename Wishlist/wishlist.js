@@ -237,5 +237,5 @@ function b2click() {
 }
 function b3click() {
   // Please add refer link Shop Everywere
-  window.location.href = "https://www.ssense.com/en-in/everything-else";
+  window.location.href = "\\everything\\everything1.html";
 }
