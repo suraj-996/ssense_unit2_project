@@ -1,6 +1,7 @@
 let Arr = JSON.parse(localStorage.getItem("addToBag")) || [];
 let Wishbag = JSON.parse(localStorage.getItem("Wishlist")) || [];
-let Oredr = JSON.parse(localStorage.getItem("Order")) || [];
+let Oredr = [];
+let c = 0;
 
 // When Cart Was Empaty Than Exacude this part////////////
 //
@@ -231,6 +232,8 @@ else {
   cbotton.addEventListener("click", function () {
     let vlcoupan = document.querySelector("#coupan").value;
     // alert(vlcoupan);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     if (
       vlcoupan == "masai30" ||
       vlcoupan == "Masai30" ||
@@ -239,10 +242,23 @@ else {
       vlcoupan == "Masai 30" ||
       vlcoupan == "MASAI 30"
     ) {
+      c++;
       let ct = (30 * Totalprice) / 100;
       Totalprice = Totalprice - ct;
       ordertotal = Totalprice + Shipingast;
+      let cong = Totalprice - ct;
       // alert(Totalprice);
+      let x = document.querySelector("#pop");
+      x.style.color = "white";
+      x.style.backgroundColor = "green";
+      x.innerText = `Congratulations, you saved $${cong}.00 USD`;
+      x.style.visibility = "visible";
+      function reloadtime() {
+        // window.location.reload();
+        x.style.visibility = "hidden";
+      }
+      setTimeout(reloadtime, 2000);
+
       document.querySelector("#Totalprice").innerText = `$${ordertotal}.00 USD`;
       document.querySelector(
         "#Total"
@@ -254,11 +270,20 @@ else {
         Shipincharge: Shipingast,
         NewTotal: ordertotal,
       };
+      // localStorage.clear("Order");
       Oredr.push(obb1);
-      console.log(obb1);
-
+      // console.log(obb1);
     } else {
-      alert("Entre Valid Coupan");
+      // alert("Entre Valid Coupan");
+      let x = document.querySelector("#pop");
+      x.style.color = "white";
+      x.style.backgroundColor = "#a30001 ";
+      x.innerText = "Plese Enter valid Coupon";
+      x.style.visibility = "visible";
+      function reloadtime() {
+        window.location.reload();
+      }
+      setTimeout(reloadtime, 2000);
     }
   });
 
@@ -277,11 +302,11 @@ else {
 
 function b1click() {
   // Please add refer link Shop Meanswere
-  window.location.href = "\\menPage\\index.html";
+  window.location.href = "\\menPage\\men1.html";
 }
 function b2click() {
   // Please add refer link Shop Womenswere
-  window.location.href = "\\WomenPage\\index.html";
+  window.location.href = "\\womenPage\\women1.html";
 }
 function b3click() {
   // Please add refer link Shop Everywere
@@ -290,6 +315,26 @@ function b3click() {
 
 function checkout() {
   // alert("done");
+  if (c == 0) {
+    let T = 0;
+    for (let i = 0; i < Arr.length; i++) {
+      let Tj = +Arr[i].price;
+      T = T + Tj;
+    }
+
+    let S = T / 10;
+    let OT = S + T;
+    let obb1 = {
+      cart: Arr,
+      Withoutcoupan: T,
+      Withcoupan: T,
+      Shipincharge: S,
+      NewTotal: OT,
+    };
+    // localStorage.clear("Order");
+    Oredr.push(obb1);
+  }
+
   localStorage.setItem("Order", JSON.stringify(Oredr));
-  window.location.href="/payment_page/payment.html"
+  window.location.href = "\\payments_page\\payment.html";
 }
