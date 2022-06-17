@@ -1,17 +1,14 @@
 #foot{
-    
     margin-top: 90px;
     margin-bottom: 90px;
  }
- #foot>div:first-child#foot>div:first-child{display: grid;
+ #foot>div:first-child{display: flex;
     width: 80%;
     height: 50px;
-    grid-template-columns: 90% 10%;
-    gap:15%;
-  
-
-
- }
+    
+    margin: auto;
+    
+    }
 #up{
     
     display: grid;

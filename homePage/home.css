@@ -8,9 +8,6 @@ div>img{
     width: 100%;
     height: 100%;
 }
-body button{
-   background-color: white;
-}
 /* navbar css ---------------------------------------------*/
 #navbar{
     height: 45px;
@@ -64,6 +61,31 @@ body a{
     font-size: 23px;
     cursor: pointer;
 }
+#box{
+    display: flex;
+    position: sticky;
+    right: 60%;
+    top: 2%;
+    background-color:#333333;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 5px;
+    padding: 2%;
+}
+#searchbox{
+    height:50px;
+    border-radius: 10px;
+    border: transparent;
+}
+#btn{
+    height:50px;
+    
+    margin-left: 10px;
+    border-radius: 10px;
+    border: transparent;
+     padding:1%
+}
 /* navbarcss------------------------------------------------- */
 .sale{
     position: relative;
@@ -71,9 +93,9 @@ body a{
 }
 .sale>div:nth-child(1){
     display: flex;
-    height: 100px;
+    height: 140px;
    
-    font-size: 120px;
+    font-size: 144px;
     justify-content: center;
 }
 .sale>div:nth-child(2){
@@ -90,7 +112,7 @@ body a{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
     gap:40px;
-    padding:4%;
+    padding:3%;
 }
 .upper>div:nth-child(1)>div>label{
     font-size: 18px;
@@ -165,7 +187,7 @@ margin: 1%;
     justify-content: space-between;
 }
 #buttn>button{
-    display: none;
+    display: block;
     width: 20%;
     height: 40px;
     border: 1px solid;
@@ -266,19 +288,15 @@ border-radius: 10px;
     margin-top: 90px;
     margin-bottom: 90px;
  }
- #foot>div:first-child{display: grid;
+ #foot>div:first-child{display: flex;
     width: 80%;
     height: 50px;
-    grid-template-columns: 90% 10%;
-    gap:15%;
-  
-
-
- }
     
+    margin: auto;
     
+    }
 #up{
-    width: 80%;
+    
     display: grid;
     grid-template-columns: repeat(8,1fr);
    gap: 2%;
@@ -316,6 +334,22 @@ border-radius: 10px;
     margin-right: 5px;
     margin-left: 0%;
    font-size: 14px;
+}
+#mohit{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 12px;
+     margin-left: 100px; 
+}
+#mohit>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px;
+    height: fit-content;
+}
+#mohit>div>img{
+    height: fit-content;
 }
 
 @media all and (min-width:320px) and (max-width:800px) {
