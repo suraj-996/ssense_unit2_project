@@ -185,9 +185,9 @@ else {
   let TotalName = document.createElement("p");
   TotalName.innerText = "Total";
   let TotalShiping = document.createElement("p");
-  TotalShiping.innerText = "Shiping estimate";
+  TotalShiping.innerText = "Shipping estimate";
   let TotalOrder = document.createElement("p");
-  TotalOrder.innerText = "Oeder Total";
+  TotalOrder.innerText = "Order Total";
   //
   Totaldiv1.append(TotalName, TotalShiping, TotalOrder);
   ///////////////////////
@@ -256,6 +256,7 @@ else {
       };
       Oredr.push(obb1);
       console.log(obb1);
+
     } else {
       alert("Entre Valid Coupan");
     }
@@ -290,5 +291,5 @@ function b3click() {
 function checkout() {
   // alert("done");
   localStorage.setItem("Order", JSON.stringify(Oredr));
-  window.location.href = "https://www.masaischool.com/";
+  window.location.href="/payment_page/payment.html"
 }
