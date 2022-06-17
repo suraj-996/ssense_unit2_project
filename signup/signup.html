@@ -25,6 +25,11 @@
             margin-top: 20px;
             cursor: pointer;
         }
+        #radio{
+         display: flex;
+            margin-left: -20px;
+            font-size: 12px;
+        }
        
            form{
             margin-top: 10px;
@@ -58,10 +63,11 @@
             <label>Password</label>
             <input type="password" id="password" placeholder="Enter Your Password">
             <span>Singup for update and promotions</span>
-            <input type="radio" id="M"  name="editList" value="mens"/>  <label for="mens">MEN'S</label>
-           
-            <input type="radio" id="W" name="editList" value="womens"/>  <label for="mens">WOMEN'S</label>
-            <input type="radio" id="NT" name="editList" value="no thanks"/> <label for="mens">NO THANKS</label>
+            <label id="radio">
+            <input type="radio" id="M"  name="editList" value="mens"/>MEN'S
+            <input type="radio" id="W" name="editList" value="womens"/>WOMEN'S
+            <input type="radio" id="NT" name="editList" value="no thanks"/>NO THANKS
+            </label>
  
  
             <button id="button">CREATE AN ACCOUNT</button>
