@@ -1,0 +1,476 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  #payment_heading {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-top: -12px;
+    z-index: 3;
+    text-align: center;
+  }
+  #payment_heading > h2 {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    font-weight: 550;
+    font-size: 25px;
+    color: #726262;
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    width: 95%;
+  }
+  #main_container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  #left_page {
+    width: 55%;
+    margin-right: 55px;
+  }
+  #left_page > p:first-child {
+    font-size: 12px;
+    font-weight: 50;
+    margin-bottom: 23px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(97, 84, 84);
+  }
+  #left_page > p + p {
+    font-size: 11px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 40, 40);
+    margin-bottom: 7px;
+  }
+  .forallheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 40, 40);
+  }
+  #right_page {
+  
+    width: 28%;
+    height: 680px;
+    margin-left: 30px;
+    margin-top: 36px;
+    position: sticky;
+    top: -90px;
+  }
+  #right_page > p {
+    font-size: 11px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 40, 40);
+    margin-bottom: 5px;
+  }
+
+  .shipping_details {
+    display: flex;
+    margin-top: 20px;
+  }
+  .shipping_details > div > input {
+    height: 40px;
+    width: 360px;
+    border: 1px solid rgb(184, 184, 184);
+    padding-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+  .shipping_details > div > label {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+  }
+
+  #left_part {
+    width: 45%;
+   
+  }
+  #right_part {
+    width: 45%;
+    margin-left: 40px;
+  }
+  #state {
+    height: 40px;
+    width: 180px;
+    margin-top:5px;
+  }
+  #number {
+    width: 170px;
+
+    padding-left: 8px;
+  }
+  #zip {
+    width: 170px;
+    padding-left: 8px;
+  }
+
+  #shipping_methods {
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+    margin-top: 20px;
+  }
+  #shipping_methods > input {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  #card_data {
+    display: flex;
+  }
+
+  .special {
+    height: 40px;
+    width: 360px;
+
+    padding-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+  .card_left > label {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+    margin-left: 0px;
+  }
+  
+  .card_right {
+    margin-left: 50px;
+  }
+  .card_right > input {
+    height: 42px;
+    width: 360px;
+    font-size: 12px;
+    border: 1px solid rgb(184, 184, 184);
+    padding-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .card_right > label {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+  }
+  #cvv {
+    width: 100px;
+  }
+  #expiry {
+    width: 100px;
+  }
+  .payment_methods {
+    margin-top: 30px;
+  }
+  .payment_methods > label {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+    line-height: 25px;
+  }
+  .payment_methods > input {
+    margin-left: 0px;
+  }
+
+  #card_details {
+    margin-top: 27px;
+  }
+  .billing {
+    margin-top: 30px;
+  }
+  .shipping_address {
+    margin-top: 25px;
+    font-size: 13px;
+  }
+  #addresschanger {
+    margin-left: 25px;
+  }
+  #shipping_form {
+    display: flex;
+  }
+  .terms {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .terms > p {
+ 
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(110, 103, 103);
+    line-height: 25px;
+  }
+  .terms > p + p {
+    margin-left: 0px;
+  }
+  .terms > p:first-child {
+    margin-right: 15px;
+  }
+  #subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  #addresschanger {
+    margin-bottom: 50px;
+    color: rgb(80, 62, 62);
+  }
+  hr {
+    margin-bottom: 15px;
+  }
+  #cart_product {
+    height: 328px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .right_label {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+    line-height: 25px;
+  }
+  #order_place {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 11px;
+    margin-top:30px;
+    cursor: pointer;
+  }
+  #notice>p{
+    line-height: 15px;
+  }
+  #country_region{
+    padding-top:13px;
+  }
+  #select{
+    height: 40px;
+    width: 370px;  
+    margin-bottom: 15px;
+    margin-top:5px;
+  }
+
+#outermostdiv{
+    display:flex;
+    justify-content: space-between;
+}
+#outermostdiv>div:last-child{
+  font-size:13px;
+  margin-bottom:-20px;
+  margin-top:40px;
+}
+  #left_part_of_bag{
+    display:flex;
+  }
+
+
+
+  #left_part_of_bag>div>img{
+      width:65px;
+      margin-top:35px;
+      margin-bottom:30px;
+    
+  }
+  #left_part_of_bag>div:first-child{
+    margin-left:5px;
+    margin-top:-20px;
+    margin-bottom:0px;
+  }
+  #left_part_of_bag>div:last-child{
+    margin-top:40px;
+    margin-left:15px;
+  }
+  #left_part_of_bag>div>p:first-child{
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 40, 40);
+  }
+  #left_part_of_bag>div>p+p{
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(83, 77, 77);
+    line-height: 18px;
+  }
+ .customization_for_right{
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 40, 40);
+    line-height: 20px;
+ }
+ #notice>p+p{
+    margin-top:-4px;
+    margin-bottom:4px;
+    line-height: 20px;
+ }
+ .card_image>img{
+    margin-left:15px;
+ 
+    margin-bottom:-8px;
+ }
+ .terms{
+ text-align: center;
+ margin:auto;
+ margin-bottom:200px;
+ }
+ #hr_last{
+  
+  width:55%;
+  margin-left:55px;
+  margin-top:40px;
+}
+#assistant{
+  position:fixed;
+  bottom:50px;
+  height: 30px;
+  right:60px;
+ text-align: right;
+ text-decoration: underline;
+ font-size: 13px;
+}
+
+#pop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  height:35px;
+   width:100%;
+  top:55px;
+  background-color: red;
+  z-index: 1;
+  visibility: hidden;
+}
+
+
+ /* Media Query Part */
+
+ @media all and (max-width:1250px) and (min-width:574px){
+      #main_container{
+         flex-direction: column;
+      }
+      #right_part {
+        width: 90%;
+    
+        margin-left: 50px;
+      }
+      
+  #left_part {
+    width: 90%;
+    margin-right:10px;
+  }
+      #left_page{
+        width:75%;;
+        margin:auto;
+      }
+      #right_page{
+      width:75%;
+      margin:auto;
+      }
+      #left_part{
+       max-width: 360px;
+       min-width: 200px;
+      }
+      #right_part{
+        max-width: 360px;
+       min-width: 200px;
+      }
+      #order_place{
+        width:53%;
+        display:block;
+     margin:auto;
+     margin-top:40px;
+
+
+      }
+      #hr_last{
+        
+        width:75%;
+        margin:auto;
+        margin-top:70px;
+      }
+      .terms{
+     display:flex;
+     justify-content: center;
+     margin-top:50px;
+
+      }
+     
+ }
+ #pop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+ @media all and (max-width:573px) and (min-width:200px){
+
+
+      #main_container{
+         flex-direction: column;
+      } 
+
+  .shipping_details{
+    flex-direction: column;
+  }
+#left_part{
+width:90%;
+}
+#right_part{
+width:90%;
+margin-left:0px;
+}
+#left_page{
+ width:90%;
+  margin:auto;
+  margin-left:30px;
+}
+#right_page{
+width:90%;
+margin:auto;
+margin-left:30px;
+}
+#order_place{
+  width:53%;
+  display:block;
+margin:auto;
+margin-top:40px;
+}
+#hr_last{
+  width:75%;
+  margin:auto;
+  margin-top:70px;
+}
+.card_left{
+margin-left:2px;
+}
+.card_right{
+  margin-right:0px;
+}
+#card_details{
+width:90%;
+}
+ };
