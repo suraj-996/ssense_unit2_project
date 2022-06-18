@@ -70,7 +70,7 @@ function orderplace() {
     let x = document.querySelector("#pop");
     x.style.color = "white";
     x.style.backgroundColor = "green";
-    x.innerText = "Redirecting to Payment Page ...";
+    x.innerText = "Redirecting to Otp Page ...";
     x.style.visibility = "visible";
     function reloadtime() {
       window.location.reload();
@@ -78,7 +78,7 @@ function orderplace() {
     setTimeout(reloadtime, 2000);
 
     function delay() {
-      window.location.href = "/otp_page/otp.html";
+      window.location.href = "../otp_page/otp.html";
     }
     setTimeout(delay, 2000);
   }

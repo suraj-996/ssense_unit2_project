@@ -11,67 +11,7 @@ div>img{
 body button{
     background-color: white;
 }
-/* navbar css ---------------------------------------------*/
-#navbar{
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:rgba(255,255, 255, 1);
-    background-position: fixed;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: sticky;
-    top:0px;
-    
-    
-}
 
-#navbar>div:nth-child(3){
-    width:35%;
-    display: flex;
-  
-    justify-content: space-between;
-    font-size: 14px;
-  
-    
-}
-#navbar>div:nth-child(5){
-    width:35%;
-    display: flex;
- 
-    justify-content: space-around;
-    font-size: 14px;
-  
-    
-}
-#navbar>div:nth-child(2){
-    
-    display: flex;
-  background-color: white;
-    justify-content: space-around;
-    font-size: 20px;
-    
-}
-body a{
-    text-decoration: none;
-    color:black;
-}
-
-#navbar>div>a:hover{
-    font-size: 15px;
-    cursor: pointer;
-}
-#navbar>div:nth-child(2)>a:hover{
-    font-size: 23px;
-    cursor: pointer;
-}
-#toggle{
-    display: none;
-}
-#navbar>label{
-    display: none;
-}
 #box{
     display: flex;
     position: sticky;
@@ -103,24 +43,94 @@ body a{
     left: 20%;
 }
 /* navbarcss------------------------------------------------- */
+/* navbar css ---------------------------------------------*/
+#navbar{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255,255, 255, 1);
+    background-position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top:0px;
+    
+    
+}
+
+#navbar>div:nth-child(3){
+    width:35%;
+    display: flex;
+
+    justify-content: space-between;
+    font-size: 14px;
+
+    
+}
+#navbar>div:nth-child(5){
+    width:35%;
+    display: flex;
+
+    justify-content: space-around;
+    font-size: 14px;
+
+    
+}
+#navbar>div:nth-child(2){
+    
+    display: flex;
+background-color: white;
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+
+
+#navbar>div>a:hover{
+    font-size: 15px;
+    cursor: pointer;
+}
+#navbar>div:nth-child(2)>a:hover{
+    font-size: 23px;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+#navbar>label{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
 .sale{
     position: relative;
     width: 100%;
 }
 .sale>div:nth-child(1){
     display: flex;
-    height: 100px;
+    height: fit-content;
+    /* width: 90%; */
    
-    font-size: 120px;
+    /* font-size: 120px; */
     justify-content: center;
+    margin-top: 30px;
+}
+.sale>div>img{
+    width: 94%;
 }
 .sale>div:nth-child(2){
    display: flex;
-    font-size: 35px;
+    font-size: 70px;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 110px;
     margin-bottom: 20px;
+    /* color: gray; */
 
+}
+.sale>div:nth-child(2)>a{
+    color: gray;
 }
 .upper>div:nth-child(1){
     width: 100%;
@@ -374,6 +384,7 @@ border-radius: 10px;
 #mohit>div>span{
     display: block;
 } 
+
 
 
 @media all and (min-width:320px) and (max-width:800px) {

@@ -1,3 +1,67 @@
+
+  /* navbar css --------------------------------------------- */
+  #navbar{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255,255, 255, 1);
+    background-position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top:0px;
+    margin-bottom: 40px;
+    
+}
+#navbar>div:nth-child(1)>a{
+    padding: 30px;
+}
+#navbar>div:nth-child(3){
+    width:35%;
+    display: flex;
+  
+    justify-content: space-between;
+    font-size: 14px;
+  
+    
+}
+#navbar>div:nth-child(5){
+    width:35%;
+    display: flex;
+ 
+    justify-content: space-around;
+    font-size: 14px;
+  
+    
+}
+#navbar>div:nth-child(2){
+    
+    display: flex;
+  background-color: white;
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+#navbar>div>a:hover{
+    font-size: 15px;
+    cursor: pointer;
+}
+#navbar>div:nth-child(2)>a:hover{
+    font-size: 23px;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+#navbar>label{
+    display: none;
+}
+
 #main{
     border: 1px solid transparent;
     /* nmxdfvjidfv */

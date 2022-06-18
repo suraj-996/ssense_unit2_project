@@ -47,5 +47,5 @@ for(let i=0;i<summarydata.length;i++){
  document.querySelector("#button").addEventListener("click", homepage);
 
  function homepage(){
-window.location.assign("https://www.ssense.com")
+window.location.assign("../menPage/men1.html")
  }
