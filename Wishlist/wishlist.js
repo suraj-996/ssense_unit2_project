@@ -229,11 +229,11 @@ else {
 
 function b1click() {
   // Please add refer link Shop Meanswere
-  window.location.href = "\\menPage\\index.html";
+  window.location.href = "\\menPage\\men1.html";
 }
 function b2click() {
   // Please add refer link Shop Womenswere
-  window.location.href = "\\WomenPage\\index.html";
+  window.location.href = "\\womenPage\\women1.html";
 }
 function b3click() {
   // Please add refer link Shop Everywere
