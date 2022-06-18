@@ -511,3 +511,10 @@ function addToBag(e){
     console.log(productArr)
     localStorage.setItem("addToBag", JSON.stringify(productArr))
 }
+let log=JSON.parse(localStorage.getItem("userdata"))||[];
+let sta=document.getElementById("status")
+if(log.length!=0){
+    sta.innerText=log[0].email;
+    sta.style.color="teal"
+}
+document.getElementById("login").innerText="shopping bag"+"("+productArr.length+")"
