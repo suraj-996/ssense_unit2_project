@@ -23,7 +23,7 @@ function orderplace() {
     }
     setTimeout(reloadtime, 2000);
     function delay() {
-      window.location.href = "/confirmation_page/placedorder.html";
+      window.location.href = "../confirmation_page/placedorder.html";
     }
     setTimeout(delay, 2000);
   }

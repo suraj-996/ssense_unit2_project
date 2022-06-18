@@ -336,5 +336,5 @@ function checkout() {
   }
 
   localStorage.setItem("Order", JSON.stringify(Oredr));
-  window.location.href = "\\payments_page\\payment.html";
+  window.location.href = "../payments_page/payment.html";
 }
