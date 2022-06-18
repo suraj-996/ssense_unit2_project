@@ -224,3 +224,48 @@ span{
     z-index: 1;
     visibility: hidden;
   }
+  /* navbar css ---------------------------------------------*/
+#navbar{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255,255, 255, 1);
+    background-position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top:0px;
+    text-decoration: none;
+    
+    
+}
+
+#navbar>div:nth-child(1){
+    width:35%;
+    display: flex;
+  
+    justify-content: space-between;
+    font-size: 14px;
+    
+}
+#navbar>div:nth-child(3){
+    width:35%;
+    display: flex;
+ 
+    justify-content: space-around;
+    font-size: 14px;
+    
+}
+#navbar>div:nth-child(2){
+    
+    display: flex;
+  background-color: white;
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color:black;
+}
