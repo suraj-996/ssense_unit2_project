@@ -134,5 +134,5 @@ function addToBag(e){
     }
     productArr.push(obj)
     // console.log(productArr)
-    localStorage.setItem("addToBag", JSON.stringify(everything_else))
+    localStorage.setItem("addToBag", JSON.stringify(productArr))
 }

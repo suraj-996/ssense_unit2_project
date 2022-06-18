@@ -25,7 +25,7 @@ img.setAttribute("src",element.img);
 let brand=document.createElement("p");
   brand.innerText=element.name;
 let name=document.createElement("p");
-name.innerText=element.color;
+name.innerText="SIZE - UNI";
 
 let price=document.createElement("p");
 price.innerText="$"+element.price;
