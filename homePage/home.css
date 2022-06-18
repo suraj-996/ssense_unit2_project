@@ -300,6 +300,7 @@ padding: 10px 35px;
 margin: 1%;
 border-radius: 10px;
  }
+ /* -------------------------------------------------------- */
  #foot{
     margin-top: 90px;
     margin-bottom: 90px;
@@ -352,6 +353,7 @@ border-radius: 10px;
     margin-left: 0%;
    font-size: 14px;
 }
+/* ------------------------------------------------- */
 #mohit{
     width: 70%;
     display: grid;
@@ -501,9 +503,11 @@ border-radius: 10px;
         width: 90%;
         background-color: white;
 }
+/* -------------------------------------- */
 #foot{
     display: none;
 }
+/* ----------------------------------------- */
 #mohit{
     width: 100%;
     display: grid;
