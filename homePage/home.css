@@ -27,20 +27,22 @@ body button{
     
 }
 
-#navbar>div:nth-child(1){
+#navbar>div:nth-child(3){
     width:35%;
     display: flex;
   
     justify-content: space-between;
     font-size: 14px;
+  
     
 }
-#navbar>div:nth-child(3){
+#navbar>div:nth-child(5){
     width:35%;
     display: flex;
  
     justify-content: space-around;
     font-size: 14px;
+  
     
 }
 #navbar>div:nth-child(2){
@@ -63,6 +65,12 @@ body a{
 #navbar>div:nth-child(2)>a:hover{
     font-size: 23px;
     cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+#navbar>label{
+    display: none;
 }
 #box{
     display: flex;
@@ -89,6 +97,10 @@ body a{
     border-radius: 10px;
     border: transparent;
      padding:1%
+}
+#jadu{
+    position: fixed;
+    left: 20%;
 }
 /* navbarcss------------------------------------------------- */
 .sale{
@@ -363,37 +375,52 @@ border-radius: 10px;
 
 
 @media all and (min-width:320px) and (max-width:800px) {
-    #navbar>div:nth-child(1){
-      
-        width:40%;
-        display: grid;
+    #navbar{
+        display: flex;
+        width:100%;
+        
+    
+       }
+        #navbar>div:nth-child(3){
+            margin-top: 200px;
+          width: 100%;
+           line-height: 30px;
+          
+           background-color:white;
+            display: none;
+            
+        }
+        #navbar>div:nth-child(5){
+            width: 100%;
+            line-height: 30px;
+            
+            display: none;
+        }
+        #navbar>div:nth-child(4){
+           display: inherit;
+        }
+        #navbar a{
+            display: block;
+        }
+        #toggle{
+            display: none;
+        }
+        #navbar>label{
+            display: inherit;
+        }
+        #toggle:checked +  .dis{
+            display: block;
+            
+        }
        
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: repeat(1,auto );
-        justify-content: space-between;
-        font-size: 11px;
-        gap:2%;
-        
-    }
-    #navbar>div:nth-child(3){
-        width:40%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto );
-        justify-content: space-around;
-        font-size: 11px;
-        gap:2%;
-        
-    }
-    .htao{
-        display: none;
-    }
+    
 
     /* ------------------------------------ */
    
     .sale>div:nth-child(1){
         height: 60px;
-        font-size: 60px;  
+        font-size: 60px; 
+        display: none; 
     }
     .upper>div:nth-child(1){
         width: 100%;
@@ -473,4 +500,17 @@ border-radius: 10px;
      .kali button{
         width: 90%;
         background-color: white;
+}
+#foot{
+    display: none;
+}
+#mohit{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+     /* margin-left: 100px;  */
+     margin:auto;
+}
 }

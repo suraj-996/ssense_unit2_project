@@ -3,9 +3,10 @@ function check(event){
     event.preventDefault();
     let box=document.createElement('div')
     box.setAttribute("id",'box')
+   
     box.style.height="80px";
     box.style.width="350px";
-    box.style.top="600px";
+    box.style.top="500px";
     let aam=document.createElement("input")
     aam.setAttribute("id","searchbox")
     aam.setAttribute("placeholder","search here!")
@@ -19,8 +20,9 @@ function check(event){
     box.append(aam,btn)
     document.getElementById("jadu").append(box)
 }
-let res=[]
+
 function craate(a){
+    let res=[]
     a=a.toUpperCase()
     // Men data
 
@@ -473,8 +475,8 @@ let arr=[
 
 
 function displayProduct(data){
-    document.querySelector("#aakash").innerHTML=""
-    document.querySelector("#mohit").innerHTML=""
+    document.querySelector("#aakash").innerHTML="";
+    document.querySelector("#mohit").innerHTML="";
     data.forEach(function(e,i){
         let product = document.querySelector("#mohit");
         let div=document.createElement("div");
