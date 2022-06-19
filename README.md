@@ -21,3 +21,25 @@
 
 #### `Landing Page`
 ![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/Screenshot%20(99).png)
+<br/>
+#### `Signup Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/signup.png)
+<br/>
+#### `Men Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/men.png)
+<br/>
+#### `Women Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/women.png)
+<br/>
+#### `Shopping Bag Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/bag.png)
+<br/>
+#### `Payment Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/payment.png)
+<br/>
+#### `Otp Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/otp.png)
+<br/>
+#### `Ordered Page`
+![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/order.png)
+![img]()
