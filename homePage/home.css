@@ -103,6 +103,7 @@ background-color: white;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 .sale{
     position: relative;
