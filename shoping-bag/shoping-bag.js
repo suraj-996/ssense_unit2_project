@@ -2,7 +2,7 @@ let Arr = JSON.parse(localStorage.getItem("addToBag")) || [];
 let Wishbag = JSON.parse(localStorage.getItem("Wishlist")) || [];
 let Oredr = [];
 let c = 0;
-let userData = JSON.parse(localStorage.getItem("userdata")) || []
+
 // When Cart Was Empaty Than Exacude this part////////////
 //
 //
@@ -76,7 +76,7 @@ else {
   p21.innerText = "LOGGED IN AS";
 
   let p22 = document.createElement("p");
-  p22.innerText = userData[0].email;
+  p22.innerText = "rk6914128@gmail.com";
 
   let p23 = document.createElement("button");
   p23.innerText = "PROCEED TO CHECKOUT";
