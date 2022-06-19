@@ -1,169 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Login | SSENSE</title>
     <link rel="icon" href="//res.cloudinary.com/ssenseweb/image/upload/v1472005257/web/favicon.ico" type="image/x-icon">
     <style>
-         /* *{
+        /* *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         } */
-    body a{
-        text-decoration: none;
-        color:black;
-    }
-    /* navbar css ---------------------------------------------*/
-    #navbar{
-        height: 45px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color:rgba(255,255, 255, 1);
-        background-position: fixed;
-        padding-left: 20px;
-        padding-right: 20px;
-        position: sticky;
-        top:0px;
-    }
+        body a {
+            text-decoration: none;
+            color: black;
+        }
 
-    #navbar>div:nth-child(3){
-        width:35%;
-        display: flex;
-    
-        justify-content: space-between;
-        font-size: 14px;
-    
-        
-    }
-    #navbar>div:nth-child(5){
-        width:35%;
-        display: flex;
-    
-        justify-content: space-around;
-        font-size: 14px;
-    
-        
-    }
-    #navbar>div:nth-child(2){
-        
-        display: flex;
-    background-color: white;
-        justify-content: space-around;
-        font-size: 20px;
-        
-    }
+        /* navbar css ---------------------------------------------*/
+        #navbar {
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 1);
+            background-position: fixed;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar>div:nth-child(3) {
+            width: 35%;
+            display: flex;
+
+            justify-content: space-between;
+            font-size: 14px;
 
 
-    #navbar>div>a:hover{
-        font-size: 15px;
-        cursor: pointer;
-    }
-    #navbar>div:nth-child(2)>a:hover{
-        font-size: 23px;
-        cursor: pointer;
-    }
-    #toggle{
-        display: none;
-    }
-    #navbar>label{
-        display: none;
-    }
-        #form{
+        }
+
+        #navbar>div:nth-child(5) {
+            width: 35%;
+            display: flex;
+
+            justify-content: space-around;
+            font-size: 14px;
+
+
+        }
+
+        #navbar>div:nth-child(2) {
+
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            font-size: 20px;
+
+        }
+
+
+        #navbar>div>a:hover {
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #navbar>div:nth-child(2)>a:hover {
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        #navbar>label {
+            display: none;
+        }
+
+        #form {
             background-color: white;
             width: 30%;
             margin: auto;
             margin-top: 60px;
 
         }
-        input,button{
+
+        input,
+        button {
             width: 100%;
             font-size: 18px;
             display: block;
             padding: 8px 0px 8px 0px;
             margin-top: 5px
         }
-        #button{
+
+        #button {
             background-color: black;
             color: white;
             padding: 8px 0px 8px 0px;
             font-size: 18px;
             margin: 20px 0px 20px 0px;
         }
-       
-           form{
+
+        form {
             margin-top: 10px;
-           }
-           span{
+        }
+
+        span {
             font-size: 18px;
             display: block;
             margin-bottom: 20px;
-           }
-         #email{
+        }
+
+        #email {
             margin-bottom: 10px;
-         }
-         form>a{
+        }
+
+        form>a {
             text-decoration: none;
             color: black;
             font-size: 18px;
-         }
-          /* -------------------------------------------------------- */
-    #foot{
-        position: absolute;
-        bottom: 0;
-        text-transform: uppercase;
-        margin: auto;
-    }
-    #foot>div:first-child{display: flex;
-        width: 80%;
-        height: 50px;
-        margin: auto;
-        
         }
-    #up{
-        
-        display: grid;
-        grid-template-columns: repeat(8,1fr);
-        gap:2%;
-        font-size: 11px;
-        align-items: center;
-        justify-content: center;
+
+        /* -------------------------------------------------------- */
+        #foot {
+            position: absolute;
+            bottom: 0;
+            text-transform: uppercase;
+            margin: auto;
         }
-        #foot>div:first-child>div+div{
-            width:12%;
-            display:flex ;
-            align-items: center ;
+
+        #foot>div:first-child {
+            display: flex;
+            width: 80%;
+            height: 50px;
+            margin: auto;
+
+        }
+
+        #up {
+
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 2%;
+            font-size: 11px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #foot>div:first-child>div+div {
+            width: 12%;
+            git display: flex;
+            align-items: center;
             justify-content: space-around;
 
         }
 
-    #down>ul{
-        width: 55%;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        gap:2%;
-        font-size: 12px;
-        justify-content: center;
-        color: rgb(124, 124, 248);
-        list-style: none;
-        margin: auto;
-    }
-    #foot>div:first-child>div>img{
-        width: 20px;
-        height: 44%;
+        #down>ul {
+            width: 55%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2%;
+            font-size: 12px;
+            justify-content: center;
+            color: rgb(124, 124, 248);
+            list-style: none;
+            margin: auto;
+        }
+
+        #foot>div:first-child>div>img {
+            width: 20px;
+            height: 44%;
 
 
-    }
-    #up>a{
-        text-decoration: none;
-        color:#333333;
-        margin-right: 5px;
-        margin-left: 0%;
-        font-size: 14px;
-    }
-/* ------------------------------------------------- */
+        }
+
+        #up>a {
+            text-decoration: none;
+            color: #333333;
+            margin-right: 5px;
+            margin-left: 0%;
+            font-size: 14px;
+        }
+
+        /* ------------------------------------------------- */
     </style>
 </head>
+
 <body>
     <div id="navbar">
         <label for="toggle">&#9776;</label>
@@ -186,19 +209,19 @@
         </div>
     </div>
     <div id="form">
-       
+
         <form>
             <span>LOGIN</span>
             <label>Email address</label>
             <input type="email" id="email" placeholder="Enter Your Email Here">
-            <label >Password</label>
+            <label>Password</label>
             <input type="password" id="password" placeholder="SHOW">
-           
+
             <button id="button">CONTINUE</button>
             <a href="">Forgot your password?</a>
             <a href="">Not your email?</a>
         </form>
-    </div>  
+    </div>
     <div id="foot">
         <div>
             <div id="up">
@@ -246,51 +269,45 @@
         </div>
     </div>
 </body>
+
 </html>
 
 <script>
-    let form=document.querySelector("form");
+    let form = document.querySelector("form");
 
-    let user_data_arr=JSON.parse(localStorage.getItem("userdata"))||[];
-    form.addEventListener("submit",function(event)
-    
-    {
+    let user_data_arr = JSON.parse(localStorage.getItem("userdata")) || [];
+    form.addEventListener("submit", function (event) {
         event.preventDefault()
-        let obj_data={
-            email:form.email.value,
-            password:form.password.value,
+        let obj_data = {
+            email: form.email.value,
+            password: form.password.value,
 
         }
 
-    if(checksignin(obj_data.email,obj_data.password)===true)
-    {
-        localStorage.setItem("signin",JSON.stringify(obj_data));
-        alert("Redirecting to menpage");
-        window.location.href="../menPage/men1.html";
-    }
-    else if(checksignin(obj_data.email,obj_data.password)===false)
-    {
-        alert("Please Enter correct email or password");
-    }
-    else{
-        alert("please Enter your email and password");
-    }
-    
+        if (checksignin(obj_data.email, obj_data.password) === true) {
+            localStorage.setItem("signin", JSON.stringify(obj_data));
+            alert("Redirecting to menpage");
+            window.location.href = "../menPage/men1.html";
+        }
+        else if (checksignin(obj_data.email, obj_data.password) === false) {
+            alert("Please Enter correct email or password");
+        }
+        else {
+            alert("please Enter your email and password");
+        }
+
 
     });
 
-    function checksignin(email,password)
-    {
-       let filter=user_data_arr.filter(function(element){
-        return element.email===email && element.password === password;
-       })
-       if(filter.length>0)
-       {
-        return true;
-       }
-       else
-       {
-        return false;
-       }
+    function checksignin(email, password) {
+        let filter = user_data_arr.filter(function (element) {
+            return element.email === email && element.password === password;
+        })
+        if (filter.length > 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 </script>
