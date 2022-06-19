@@ -45,8 +45,8 @@ total.innerText = "Total Billing Amount $ : " + Summarydata[0].NewTotal;
  document.querySelector("#button").addEventListener("click", homepage);
 
  function homepage(){
-  localStorage.clear("Order")
-  localStorage.clear("addToBag")
+  localStorage.removeItem("Order")
+  localStorage.removeItem("addToBag")
   
 window.location.assign("../menPage/men1.html")
  }
