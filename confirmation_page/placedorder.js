@@ -1,5 +1,6 @@
 
     let summarydata=JSON.parse(localStorage.getItem("cart_data"));
+    let Summarydata = JSON.parse(localStorage.getItem("Order"));
      console.log(summarydata)
 
          summarydata.forEach(function(element){
@@ -13,9 +14,9 @@ div4.setAttribute("id","left_part_of_bag")
 let img=document.createElement("img");
 img.setAttribute("src",element.img);
 let brand=document.createElement("p");
-   brand.innerText=element.name;
+   brand.innerText=element.brand;
 let name=document.createElement("p");
-name.innerText=element.color;
+name.innerText=element.name;
 
 let price=document.createElement("p");
 price.innerText="$"+element.price;
@@ -37,11 +38,11 @@ let items=document.querySelector("#items");
   let total=document.querySelector("#total");
 
   let sum=0;
-for(let i=0;i<summarydata.length;i++){
-    sum=sum+Number((summarydata[i].price))
-}
+  for (let i = 0; i < Summarydata.length; i++) {
+    sum = sum + Number(Summarydata[i].price);
+  }
 
-  total.innerText="Total Billing Amount $ : "+(Number(40)+sum)
+  total.innerText = "Total Billing Amount $ : " + Summarydata[0].NewTotal;
 
 
  document.querySelector("#button").addEventListener("click", homepage);
