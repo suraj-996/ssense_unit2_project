@@ -47,5 +47,8 @@ for(let i=0;i<summarydata.length;i++){
  document.querySelector("#button").addEventListener("click", homepage);
 
  function homepage(){
+  localStorage.removeItem("Order")
+  localStorage.removeItem("addToBag")
+
 window.location.assign("../menPage/men1.html")
  }
