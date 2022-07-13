@@ -5,7 +5,7 @@
 <h2>Team Members</h2>
 <br/>
 
-1.) Suraj [Github profile](https://github.com/suraj588)
+1.) Suraj [Github profile](https://github.com/suraj-996)
 
 2.) Ranjeet [Github profile](https://github.com/ranjeetmasaischool)
 
